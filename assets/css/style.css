@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+input {
+    padding: 0;
+    margin: 0;
+    outline: 0px;
+    border: none;
+    padding: 8px 36px;
+    background-color: #9370DB;
+    color: #4B0082;
+    width: 100%;
+    max-width: 100%;
+    font-size: 80px;
+    border-radius: 10px 10px 0px 0;
+}
+
+.screen {
+    border-bottom: solid 1px #8A2BE2;
+}
+
+.container {
+    width: 50%;
+    max-width: 50%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "screen screen screen screen"
+        "btn-7 btn-8 btn-9 btn-plus"
+        "btn-4 btn-5 btn-6 btn-plus"
+        "btn-1 btn-2 btn-3 btn-equal"
+        "btn-0 btn-0 btn-clear btn-equal"
+    ;
+}
+
+.btn {
+    font-size: 30px;
+    background-color: #9370DB;
+    color: #4B0082;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 36px 36px;
+    border: solid 1px #8A2BE2;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #9400D3;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.btn-0 {
+    grid-area: btn-0;
+    border-radius: 0 0 0 10px;
+}
+
+.btn-1 {
+    grid-area: btn-1;
+}
+
+.btn-2 {
+    grid-area: btn-2;
+}
+
+.btn-3 {
+    grid-area: btn-3;
+}
+
+.btn-4 {
+    grid-area: btn-4;
+}
+
+.btn-5 {
+    grid-area: btn-5;
+}
+
+.btn-6 {
+    grid-area: btn-6;
+}
+
+.btn-7 {
+    grid-area: btn-7;
+}
+
+.btn-8 {
+    grid-area: btn-8;
+}
+
+.btn-9 {
+    grid-area: btn-9;
+}
+
+.btn-plus {
+    grid-area: btn-plus;
+}
+
+.btn-clear {
+    grid-area: btn-clear;
+}
+
+.btn-equal {
+    grid-area: btn-equal;
+    border-radius: 0 0 10px 0;
+}
+
+.screen {
+    grid-area: screen;
+}
+
+@media (max-width: 769px) {
+    .container {
+        width: 70%;
+        max-width: 70%;
+    }
+
+    input {
+        font-size: 60px;
+    }
+
+    .btn {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    input {
+        font-size: 60px;
+    }
+
+    .btn {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    input {
+        font-size: 60px;
+    }
+
+    .btn {
+        font-size: 40px;
+    }
+}
